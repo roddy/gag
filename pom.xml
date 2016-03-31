@@ -1,91 +1,105 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>org.sonatype.oss</groupId>
-        <artifactId>oss-parent</artifactId>
-        <version>7</version>
-    </parent>
-
-    <groupId>com.github.stokito</groupId>
-    <artifactId>gag</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <name>Google Annotations Gallery parent</name>
-    <description>
-        An annotations library that provides a rich set of annotations for developers to express themselves.
+ <modelVersion>4.0.0</modelVersion>
+ <parent>
+  <groupId>org.sonatype.oss</groupId>
+  <artifactId>oss-parent</artifactId>
+  <version>7</version>
+ </parent>
+ <groupId>com.github.stokito</groupId>
+ <artifactId>gag</artifactId>
+ <version>1.0.2-SNAPSHOT</version>
+ <packaging>pom</packaging>
+ <name>Google Annotations Gallery parent</name>
+ <description>An annotations library that provides a rich set of annotations for developers to express themselves.
         Do you find the standard Java annotations dry and lackluster?
         Have you ever resorted to leaving messages to fellow developers with the @Deprecated annotation? Wouldn't you rather leave a @LOL or @Facepalm instead?
-        If so, then this is the gallery for you.
-    </description>
-    <inceptionYear>2010</inceptionYear>
-    <url>https://github.com/stokito/gag</url>
-    <licenses>
-        <license>
-            <name>The Apache Software License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
-    <developers>
-        <developer>
-            <name>Leo Deegan</name>
-            <email>leodeegan@google.com</email>
-            <roles>
-                <role>author</role>
-                <role>contributor</role>
-            </roles>
-        </developer>
-        <developer>
-            <name>Andrew Griffiths</name>
-            <email>andrew.john.griffiths@gmail.com</email>
-            <roles>
-                <role>author</role>
-                <role>contributor</role>
-            </roles>
-        </developer>
-        <developer>
-            <name>Sergey Ponomarev</name>
-            <email>stokito@gmail.com</email>
-            <roles>
-                <role>maintainer</role>
-            </roles>
-        </developer>
-    </developers>
-    <scm>
-        <connection>scm:git:git://github.com/stokito/gag.git</connection>
-        <developerConnection>scm:git:git@github.com:stokito/gag.git</developerConnection>
-        <url>https://github.com/stokito/gag/</url>
-    </scm>
-    <issueManagement>
-        <url>https://github.com/stokito/gag/issues</url>
-    </issueManagement>
-    <modules>
-        <module>gag-annotations</module>
-        <module>gag-agent</module>
-    </modules>
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jdk>1.6</jdk>
-    </properties>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <configuration>
-                    <encoding>${project.build.sourceEncoding}</encoding>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>${jdk}</source>
-                    <target>${jdk}</target>
-                    <compilerVersion>${jdk}</compilerVersion>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+        If so, then this is the gallery for you.</description>
+ <inceptionYear>2010</inceptionYear>
+ <url>https://github.com/stokito/gag</url>
+ <licenses>
+  <license>
+   <name>The Apache Software License, Version 2.0</name>
+   <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+   <distribution>repo</distribution>
+  </license>
+ </licenses>
+ <developers>
+  <developer>
+   <name>Leo Deegan</name>
+   <email>leodeegan@google.com</email>
+   <roles>
+    <role>author</role>
+    <role>contributor</role>
+   </roles>
+  </developer>
+  <developer>
+   <name>Andrew Griffiths</name>
+   <email>andrew.john.griffiths@gmail.com</email>
+   <roles>
+    <role>author</role>
+    <role>contributor</role>
+   </roles>
+  </developer>
+  <developer>
+   <name>Sergey Ponomarev</name>
+   <email>stokito@gmail.com</email>
+   <roles>
+    <role>maintainer</role>
+   </roles>
+  </developer>
+ </developers>
+ <scm>
+  <connection>scm:git:git://github.com/stokito/gag.git</connection>
+  <developerConnection>scm:git:git@github.com:stokito/gag.git</developerConnection>
+  <url>https://github.com/stokito/gag/</url>
+ </scm>
+ <issueManagement>
+  <url>https://github.com/stokito/gag/issues</url>
+ </issueManagement>
+ <modules>
+  <module>gag-annotations</module>
+  <module>gag-agent</module>
+ </modules>
+ <properties>
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  <jdk>1.6</jdk>
+ </properties>
+ <build>
+  <plugins>
+   <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-resources-plugin</artifactId>
+    <configuration>
+     <encoding>${project.build.sourceEncoding}</encoding>
+    </configuration>
+   </plugin>
+   <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <configuration>
+     <source>${jdk}</source>
+     <target>${jdk}</target>
+     <compilerVersion>${jdk}</compilerVersion>
+    </configuration>
+   </plugin>
+   <plugin>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>cobertura-maven-plugin</artifactId>
+    <version>2.7</version>
+    <configuration>
+     <format>xml</format>
+     <maxmem>256m</maxmem>
+     <aggregate>true</aggregate>
+    </configuration>
+    <!--# Modified by Insights Service at 2016-03-31 19:48:06.510939-->
+   </plugin>
+   <plugin>
+    <groupId>org.eluder.coveralls</groupId>
+    <artifactId>coveralls-maven-plugin</artifactId>
+    <version>4.1.0</version>
+    <!--# Modified by Insights Service at 2016-03-31 19:48:06.513255-->
+   </plugin>
+  </plugins>
+ </build>
 </project>
